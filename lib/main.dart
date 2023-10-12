@@ -39,7 +39,28 @@ class Layar extends StatelessWidget {
             )),
       ),
       body: Center(
-        child: Text('Ini adalah belajar Scaffold'),
+        //Belajar Membuat Container
+        child: Container(
+            //decoration sebuat container
+            decoration: BoxDecoration(
+                color: Colors.lightGreen,
+                border: Border.all(
+                  color: Colors.red,
+                  width: 3,
+                ),
+                //Membuat jadi lancip
+                borderRadius: BorderRadius.circular(20),
+                //Menambahkan shadow
+                //dengan BoxShadow
+                boxShadow: const [
+                  BoxShadow(
+                      color: Colors.black, offset: Offset(3, 6), blurRadius: 10)
+                ]),
+            padding: const EdgeInsets.all(20),
+            child: Text(
+              'Ini adalah belajar Scaffold',
+              style: TextStyle(fontSize: 50),
+            )),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
